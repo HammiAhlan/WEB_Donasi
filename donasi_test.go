@@ -1,4 +1,4 @@
-package donasi
+package _donasi
 
 import (
 	"fmt"
@@ -51,7 +51,7 @@ func InsertBencanaAlam(jenis string, lokasi string, tanggal time.Time, deskripsi
 
 
 func TestGetAllDonasi(t *testing.T) {
-	data := GetAllDonasi()
+	data := GetAllDataDonasi()
 	fmt.Println(data)
 }
 //hahay

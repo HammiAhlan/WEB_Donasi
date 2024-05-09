@@ -1,4 +1,4 @@
-package donasi
+package _donasi
 
 import (
 	"context"
@@ -54,12 +54,12 @@ func GetInsertBencanaAlam(nim string) (m Donasi) {
 
 
 
-func GetAllDonasi() (data []Donasi) {
-	karyawan := MongoConnect("Donasi").Collection("donasi")
+func GetAllDataDonasi() (data []Donasi) {
+	donate := MongoConnect("Donasi").Collection("donasi")
 	filter := bson.M{}
-	cursor, err := karyawan.Find(context.TODO(), filter)
+	cursor, err := donate.Find(context.TODO(), filter)
 	if err != nil {
-		fmt.Println("GetAllDonasi: ", err)
+		fmt.Println("GetAllData: ", err)
 	}
 	err = cursor.All(context.TODO(), &data)
 	if err != nil {
@@ -67,4 +67,5 @@ func GetAllDonasi() (data []Donasi) {
 	}
 	return
 }
+
 

@@ -1,4 +1,4 @@
-module github/HammiAhlan/WEB_Donasi/Donasi
+module github.com/HammiAhlan/WEB_Donasi
 
 go 1.22.1
 
