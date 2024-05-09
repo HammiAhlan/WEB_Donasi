@@ -1,4 +1,4 @@
-package namapackage
+package donasi
 
 import (
 	"fmt"
@@ -54,3 +54,4 @@ func TestGetAllDonasi(t *testing.T) {
 	data := GetAllDonasi()
 	fmt.Println(data)
 }
+//hahay
